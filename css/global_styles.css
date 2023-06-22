@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(110, 140, 220);
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    color: darkolivegreen;
+    background-color: lightskyblue;
+    display: block;
+    width: 100%;
+    opacity: 0.5; /* changed opacity to 0.5 for now */
+}
+
+nav {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: teal;
+    display: inline-block;
+    width: 100%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* a tags for the nav menu to apply border and border radius */
+nav a {
+    margin: auto;
+    text-decoration: none;
+    color: darkgreen;
+}
+
+/* highlighting what link we clicked */
+/* MAKE SURE THIS IS NOT APPLIED IN THE CONTACT ME PAGE */
+a:active {
+    background-color: skyblue;
+}
+
+.active {
+    background-color: lightcoral;
+    color: white;
+}
+
+
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+
+/* h2 will have global formatting */
+h2 {
+    color: darkred;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    color: purple;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+
+#contactme {
+    margin: 50px;
+    color: maroon;
+}
+
+#professionalresume {
+    margin: auto;
+}
+
+/* Media queries */
+/* First media query condition: This applies to all media regardless of viewport, if pixel width is at least 1200px,
+Apply the styling property:value attributes */
+@media only all and (min-width:1200px)
+{    
+    /* Index page */
+    main section
+    {
+        color: indigo;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+/* Second media query condition: if pixel width is at least 900px, then apply the styling property:value attributes */
+@media only screen and (min-width: 600px) and (max-width: 1200px)
+{
+    /* Index page */
+    main section
+    {
+        color: lightsalmon;
+        font-style: italic;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+/* Third media query condition: if pixel width is at least 600px and at most 900px, then apply the styling property:value attributes */
+
+@media only screen and (max-width: 600px)
+{
+    main section 
+    {
+        font-weight: bold;
+        text-transform:initial;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: lightgreen;
+    }  
+}
+

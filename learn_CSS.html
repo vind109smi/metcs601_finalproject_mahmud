@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn More About CSS3</title>
+        <link rel="stylesheet" href="./css/global_styles.css">
+
+        <!-- PLEASE CHANGE THE BELOW TO HAVE CSS CONTENT ONLY-->
+        <!-- Below is only for specific styles per page, not global -->
+        <style type="text/css">
+        #mainheading {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 50%;
+            color: lightgreen;
+        }
+
+        /* Applying border styling to specifically the image's css3img id*/
+        #css3img {
+            border: 2px solid orange; /* light to dark red*/
+            border-radius: 15%;
+            margin: auto;
+            display: block;
+            position: relative;
+        }
+
+        /* maincss3content in main section in Learn About CSS3 page */
+        #maincss3content {
+            margin-left: 15px;
+            padding: 6px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* General for div directly to selector section */
+        div > section {
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            padding: 4px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Applied all structural elements here -->
+        <header>
+            <nav>
+                <a href="index.html">Main Page</a> |
+                <a href="personal_bio.html">Personal Bio</a> |
+                <a href="personal_interests.html">My Personal Interests</a> |
+                <a href="learn_HTML.html">Learn More About HTML5</a> |
+                <a href="learn_CSS.html" class="active">Learn More About CSS3</a> |
+                <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
+                <a href="works_cited.html">Works Cited Page</a>
+            </nav>   
+            <h1>Important Things to Known About CSS3</h1>
+            <div id="mainheading">
+                <figure>
+                    <img src="images/cute_css_img.jpeg" width="350" height="350" alt="blank_picture" id="css3img">
+                </figure>
+            </div>        
+        </header>
+        <br/>
+        <div>
+            <main>
+                <section id="maincss3content">
+                    <!-- VERIFY ALL THESE ARE WHAT I INCLUDE (Adding the main heart of the information of CSS)-->
+                    <div>
+                        <h3>Effects of Cascading</h3>
+                        <p> What I have learned when reviewing the CSS3 modules is that cascading is a way for us to make our HTML look pretty.
+                            We need to found out where the CSS styling file or items can be found. We do not want to deal with conflicts or redundancies.
+                            There are three types of cascading that I have learned while applying them in my assignments, two of them prevalently used.
+                            <br/>
+                            1. Inline styles -> This is where I do all my styling within one single HTML element. Ugghh, this is not efficient. 
+                            <br/>
+                            2. Internal styles -> This one is what I use in some of my pages that have unique styling, even in this project, 
+                            where I can apply the style tag inside my head element section. Not fully recommended to include all the time, but sparingly.
+                            <br/>
+                            3. External styles -> This is what I am talking about. Throughout my course assignments and even in this project, 
+                            I have and am using global styles where I have one common styling page and depending on the link reference I am
+                            providing on the specific html page, will active the cascading styles. This is also deemed as a separate CSS file.
+                           (Module 2, 2023)
+                        </p>
+                        <h3>Utilizing CSS with DOM</h3>
+                        <p> Something that I have learned in the course modules is that we can apply DOM to activate styling rules. Not much I have done so far in 
+                            my assignments with complex rules but something I found interesting. Say we have parent elements. They too have child elements.
+                            Say div parent element that contains the paragraph child element. We can define a styling rule to the direct descendant to the div element. This is known as a nested rule.
+                            E.g. take "div > p { margin: 5px}". This will take place for every paragraph element contained within a div element that will have 5px margin. We can go 
+                            deep into the DOM tree as much as we want, just not too crazy. The truth is, I applied ids to my individual elements and did unique styling so I never 
+                            resorted to this. But I could have.
+                            (Module 2, 2023)
+                        </p>
+                        <h3>Windows Progressive Apps</h3>
+                        <p> One thing that I have learned and contributed in my discussions was the use of progressive apps.
+                            The first summary point is about progressive web apps themselves. The issue we face is that various mobile devices and virtual keyboards that we use make it harder for us 
+                            to manage content. What is worse, we face the same roadblocks with dual screen computers or foldable devices (Brosset, 2021). Thankfully, progressive web apps help us tackle this nuisance, 
+                            where we can find these types of apps "stable, linkable, searchable, and responsive just like websites". Not to mention, they can work in offline mode and read files (Brosset, 2021). 
+                            We can apply the styling techniques in between web and device native interfaces. 
+                            But, the problem is that progressive web apps have the rectangular constricted windows with 
+                            the generic title bars at the very top (Brosset, 2021). For instance, see this figure below by Brosset (2021) which shows the left window being from Windows OS and the right from macOS.             
+                        </p>
+                    </div>   
+                </section>
+            </main>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+            <footer>
+                <nav>
+                    <!-- The footer will contact my contact me web form page-->
+                    <a href="contact_me.html" id="contactme">Contact Me</a>
+                </nav>
+                <!-- THIS IS FOR COPYRIGHT TEXT-->
+                &copy;2023. Sheikh Mahmud. BU MET CS601 - Web App Development
+                <br/>
+                <br/>
+                <br/>
+            </footer>
+
+    </body>
+</html>

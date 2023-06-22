@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Bio</title>
+        <link rel="stylesheet" href="./css/global_styles.css">
+        <!-- Below is only for specific styles per page, not global -->
+        <style type="text/css">
+            #myhobbieslist {
+                text-transform: uppercase;
+                font-size: 17px;
+                font-weight: bold;
+                list-style:upper-roman;
+                position: relative;
+            }
+
+            #profimgid {
+                border: 5px dotted skyblue;
+                border-width: medium;
+                border-radius: 30%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            /* USING INTERNAL CSS FOR THE TABLE ALONE */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 3px solid red;
+                text-align: center;
+                padding: 5px;
+                margin: auto;
+            }
+
+            th {
+                background-color: skyblue;
+            }
+
+            /*This indicates every even row*/
+            tr:nth-child(even) {
+                background-color: palevioletred;
+            }
+
+            caption {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            tfoot td.center {
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Applied all structural elements here -->
+        <header>
+            <nav>
+                <a href="index.html">Main Page</a> |
+                <a href="personal_bio.html" class="active">Personal Bio</a> |
+                <a href="personal_interests.html">My Personal Interests</a> |
+                <a href="learn_HTML.html">Learn More About HTML5</a> |
+                <a href="learn_CSS.html">Learn More About CSS3</a> |
+                <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
+                <a href="works_cited.html">Works Cited Page</a>
+            </nav>
+            <h1>Who I Am, What I Do and Why I Am Interested?</h1>
+            <figure>
+                <img src="images/official_prof_img.png" width="300" height="300" alt="blank_picture" id="profimgid">
+            </figure>    
+        </header>
+        <br/>
+        <main>
+            <section>
+                <div>
+                    <h2>Origins</h2>
+                <p> As mentioned in the introductory page, my name is Sheikh. I am originally from Bangladesh with Islamic descent and moved to the USA in late 2000. I was raised 
+                    here and did all my education/work here. I have three younger sisters, two of them currently studying at MIT and the little one in 4th grade. My father works in
+                    the shuttle service and also has personal online business while my mom takes care of the house. We recently moved in to a new house and I am the current homeowner.
+                    Our current residency is at Egg Harbor Township, New Jersey. As fun fact, I am planning to travel to my homecountry late this December 2023 for my wedding.
+                    Before that, I will be graduating from BU this June. 
+                </p>
+                <h2>Experiences</h2>
+                <p>
+                    I have a wide range of experience in web programming languages such as HTML5, CSS and JS along with front end frameworks such as Angular JS, Typescript,
+                    and some bit of React.js along with jQuery. I have overall 6+ years experience in my professional environment working well with 
+                    small or large niche teams coding, debugging, and deploying large scale legacy applications on the server. Aside from my work, I am currently
+                    a master's student at BU hoping to apply the new things I am learning along with this core course to advance my profession as either
+                    a senior team leader or system architect. Everything I have learned throughout my school and work journey and up to this point I want to continue on
+                    for my family, friends and peers. 
+                </p>
+                <h2>Current Role and Workplace Location</h2>
+                <p>
+                    I currently work as a full stack senior software developer at a private background screening company in Mount Laurel, NJ called <a href="https://www.verticalscreen.com/"> Vertical Screen.</a><br/><br/>
+                    I help my development team along with the QA, BA, DBA, and project management teams create, update, test, and deploy various background screening applications 
+                    that support our multitude of services such as drug screening, courts, MVR, employment I9 verification, licensing, education, etc. I mainly use HTML5,CSS, JS, and jQuery
+                    as my cornerstone front end languages along with Angular JS for our main client interface system Producer 2.0 and Angular Typescript for its submodule component, Client Profiles.
+                    The backend I work with is purely SQL Server and my role involves creating new schemas, tables, and procedures and test out changes in development and QA acceptance environments.
+                    We use .NET WebAPI to support our front end with back end transactions and we use some VB and Java code in rare legacy applications running under web forms (dating back to 1995 til now).
+                </p>
+                </div>
+                <b><a href="professional_resume.html">See My Professional Resume!</a>   </b>           
+                <hr/>
+                <!-- Creating an unordered traditional list of my personal skills, hobbies, interests -->
+                <h2>My Personal Hobbies/Interests/Roles</h2>
+                <ul id="myhobbieslist">
+                    <li>Playing Volleyball</li>
+                    <li>Sports Car Driving</li>
+                    <li>Watching Anime</li>
+                    <li>Following on Social Media</li>
+                    <li>Exploring New Places</li>
+                    <li>Doing Full Stack Development Projects at Work</li>
+                </ul>           
+            </section>
+        </main>
+        <br/>
+        <br/>
+        <hr/>   
+        <!-- Creating a table here to highlight my language skills and terms of experience-->
+        <table>
+            <caption>Programming Experience</caption>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Yrs of Experience</th>
+                    <th>Used In Work Place?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C#</td>
+                    <td>5</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>1</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>2</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS/JS</td>
+                    <td>5</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Angular JS/TS</td>
+                    <td>4</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>SQL Server</td>
+                    <td>5</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="center" colspan="3">Personal & Professional Experience From 2017-2023</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br/>
+        <br/>
+        <hr/>
+        <footer>
+            <!-- THIS IS FOR COPYRIGHT TEXT-->
+            <nav>
+                <!-- The footer will contact my contact me web form page-->
+                <a href="contact_me.html" id="contactme">Contact Me</a>
+            </nav>
+            <!-- THIS IS FOR COPYRIGHT TEXT-->
+            &copy;2023. Sheikh Mahmud. BU MET CS601 - Web App Development
+            <br/>
+            <br/>
+            <br/>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="./css/global_styles.css">
+  <!-- This internal styling is mainly for the submit button that will be greyed out if we provide no data to the forms or we provide invalid data. Also we handle class
+  styling for the error messages (red).-->
+  <style>
+    .inactive, .inactive:hover {
+      color:white;
+      background-color: darkgrey;
+    }
+    .error {
+      color:red;
+      border: 2px dashed red;
+    }
+    .center-align {
+      margin: 0 auto;
+      text-align: center;
+    } 
+</style>
+  </style>
+  <script src="./js/contact_me.js" defer></script>
+</head>
+<body>
+  <div>
+    <header>
+      <h1 id="mainwelcomeheading">Contact Form Page</h1>   
+      <nav>
+        <a href="index.html">Main Page</a> |
+        <a href="personal_bio.html">Personal Bio</a> |
+        <a href="personal_interests.html">My Personal Interests</a> |
+        <a href="learn_HTML.html">Learn More About HTML5</a> |
+        <a href="learn_CSS.html" class="active">Learn More About CSS3</a> |
+        <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
+        <a href="works_cited.html">Works Cited Page</a>
+      </nav>   
+    </header>
+    <main>
+      <section></section>
+      <div>
+        <h2 id="submitformheading">Please Reach Out To Me!</h2>
+        <!-- applying the forms but at the moment, action is left blank, I plan to use some other means to send data. TBD-->
+        <form name="myform" id="mainformsdiv" action="" method="POST" onsubmit="return validateContactForm()" novalidate>
+          <div id="controlsdiv">
+            <div>
+              <!-- Full Name -->
+              <label for="fullName">Full Name:</label>
+              <input type="text" name="fullName" id="fullName" minlength="4" placeholder="Please Enter Your Full Name." required>
+              <span id="fullName-error"></span>
+            </div>
+            <!-- Age -->
+            <div>
+              <label for="age">Age:</label>
+              <input type="number" name="age" id="age" placeholder="Please Enter Your Age." required min="1" max="150">
+              <span id="age-error"></span>
+            </div>
+            <!-- Dropdown select for Profession Or Hobby, that is required.-->
+            <div>
+              <label for="hobbies">Please State Your Hobby or Profession:</label>
+              <select name="hobbies" id="hobbies" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="video_gamer">Video Gamer</option>
+                <option value="youtube_influencer">YouTube Influencer</option>
+                <option value="software_developer">Software Developer</option>
+                <option value="healthcare_specialist">Healthcare Specialist</option>
+                <option value="other">Other</option>
+              </select>
+              <span id="professionhobby-error"></span>
+            </div>
+            <br/>
+            <!-- Checkboxes for Contact Methods, making these required -->
+            <fieldset>
+              <legend><b>How Would You Like To Be Contacted?</b></legend>
+              <input type="checkbox" name="phone" value="phone" id="phoneCheckbox"><label for="phoneCheckbox">Phone Call</label>
+              <input type="checkbox" name="txtmsg" value="txtmsg" id="textMsgCheckbox"><label for="textMsgCheckbox">Text Message</label>
+              <input type="checkbox" name="email" value="email" id="emailCheckbox"><label for="emailCheckbox">E-Mail</label>
+              <br/>
+              <hr/>
+              <!-- Text fields that will display upon selection of the corresponding checkboxes -->
+              <label for="phoneInput">Phone Number:</label><br/>
+              <input type="text" name="phoneInput" id="phoneInput" placeholder="Please Enter Phone #." pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number." style="display: none;" class="center-align">
+              <label for="emailInput">Email Address:</label><br/>
+              <input type="email" name="emailInput" id="emailInput" placeholder="Please Enter Email." style="display: none;" class="center-align">
+            </fieldset>
+            <br/>
+            <button type="submit" name="submit">Submit</button>
+            <button type="reset" name="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <br/>
+    <br/>
+    <footer id="mainfooter">
+      <nav>
+        <a href="contact_me.html" id="contactme" class="active">Contact Me</a>
+      </nav>
+      &copy; 2023. Sheikh Mahmud. BU MET CS601 - Web App Development    
+    </footer>
+  </div>
+</body>
+</html>

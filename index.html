@@ -1,0 +1,93 @@
+<!-- MAKE SURE TO APPLY VUE INTERNAL SCRIPT HERE!!!!! FULFILL THE PHOTO GALLERY -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning About HTML5 - My Personal Webpage</title>
+        <!-- Applied styles.css path here-->
+        <link rel="stylesheet" href="./css/global_styles.css">
+        <!-- Below is only for specific styles per page, not global -->
+        <style type="text/css">
+            /* Applying border styling to specifically the image's professional image in Index page */
+            #professionimg {
+                border: 2px solid indigo;
+                border-width: thick;
+                border-radius: 15%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            #aboutmetitle {
+                text-align: center;
+                margin: auto;
+            }
+
+            #toptips {
+                color: darkgreen;
+                font-size: 15px;
+            }
+
+            #li_contents {
+                margin-left: 0;
+                color: purple;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <!-- Apply global styling to the body for an appealing background color -->
+    <body>
+        <!-- Applying structural element: Header to apply introductory details such as heading and image src. -->
+        <header>
+            <nav>
+                <a href="index.html" class="active">Main Page</a> |
+                <a href="personal_bio.html">Personal Bio</a> |
+                <a href="personal_interests.html">My Personal Interests</a> |
+                <a href="learn_HTML.html">Learn More About HTML5</a> |
+                <a href="learn_CSS.html">Learn More About CSS3</a> |
+                <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
+                <a href="works_cited.html">Works Cited Page</a>
+            </nav>
+            <h1>Welcome to My HTML5 Page</h1>
+            <!-- Plopping my professional image right below my heading title -->
+            <figure>
+                <img src="images/professional_image.jpeg" width="300" height="300" alt="random_picture" id="professionimg">
+            </figure>
+        </header>
+        <!-- Applying structural element: main with the section to include the main content information such as heading 2 and paragraph text -->
+        <main>
+            <section>
+                <h2 id="aboutmetitle">About Me</h2>
+                <div>
+                    <p>Welcome to my Introductory Website on HTML5. My name is Sheikh and today I will 
+                        give you a tour of my learning experience with HTML5. Come join me in this 
+                        incredible journey. Please visit the above links in this main page.
+                     </p>
+                </div>  
+                <!-- Including an ordered traditional list of my tips/advice on getting started on the road to becoming Web Developer -->
+                <h2 id="toptips">My Top Seven Tips on Getting Started to Becoming A Web Developer</h2>
+                <ol id="li_contents">
+                    <li>Start learning basic HTML5, CSS3, JS, JSON and other web language concepts.</li>
+                    <li>Create a small scale project whether enrolled in a course such as CS601 or in any accredited institution or on your own.</li>
+                    <li>Collaborate with others on your ideas for small or large web development projects.</li>
+                    <li>Review technical concepts and keep practicing on coding before applying for jobs.</li>
+                    <li>Once you reviewed all that is needed, focus on entry level web programming positions at reasonable salary and either nearby your location or remote.</li>
+                    <li>After applying for entry level jobs, acing the interviews, and getting the job, work really hard to maintain what you learned before and after interview to keep succeeding!</li>
+                </ol>             
+            </section>
+        </main>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <!-- Appying structural element: footer with the nav tag for passing the hyperlinks for users to easily navigate-->
+        <footer>
+            <nav>
+                <!-- The footer will contact my contact me web form page-->
+                <a href="contact_me.html" id="contactme">Contact Me</a>
+            </nav>
+            <!-- THIS IS FOR COPYRIGHT TEXT-->
+            &copy;2023. Sheikh Mahmud. BU MET CS601 - Web App Development
+        </footer>
+    </body>
+</html>

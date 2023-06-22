@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn More About HTML5</title>
+        <link rel="stylesheet" href="./css/global_styles.css">
+        <!-- Below is only for specific styles per page, not global -->
+        <style type="text/css">
+        /* html main heading in LearnAboutHTML5 page */
+        #mainhtmlheading {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 50%;
+            color: darkblue
+        }
+
+        /* Applying border styling to specifically the image's html5img id*/
+        #html5img {
+            border: 2px solid #d03c3cd1; /* light to dark red*/
+            border-radius: 20%;
+            margin: auto;
+            display: block;
+            position: relative;
+        }
+
+        /* mainhtml5content in main section in LearnAboutHTML5 page */
+        #mainhtml5content {
+            margin-left: 15px;
+            padding: 5px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* General for div directly to selector section */
+        div > section {
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            padding: 4px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Applied all structural elements here -->
+        <header>
+            <nav>
+                <a href="index.html">Main Page</a> |
+                <a href="personal_bio.html">Personal Bio</a> |
+                <a href="personal_interests.html">My Personal Interests</a> |
+                <a href="learn_HTML.html" class="active">Learn More About HTML5</a> |
+                <a href="learn_CSS.html">Learn More About CSS3</a> |
+                <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
+                <a href="works_cited.html">Works Cited Page</a>
+            </nav>   
+            <h1>Important Things to Known About HTML5</h1>
+            <div id="mainhtmlheading">
+                <figure>
+                    <img src="images/html_5_personal_drawing.jpeg" width="250" height="250" alt="blank_picture" id="html5img">
+                </figure>
+            </div>        
+        </header>
+        <br/>
+        <div>
+            <main>
+                <section id="mainhtml5content">
+                    <!-- VERIFY ALL THESE ARE WHAT I INCLUDE (Adding the main heart of the information of HTML)-->
+                    <div>
+                        <h3>The Core Facets of HTML</h3>
+                        <p> What I have learned about in my first week of HTML5 is that a website will comprise of key features below:
+                            <br/>
+                            1. Text is the most important component that makes mostly the content of a webpage. This is where we write, blog, and apply important information. 
+                            <br/>
+                            2. Images/graphics are the other component(s) that help make a website come to life by applying visuals to intrigued visitors. Such media are vital to making navigation and viewing easier. 
+                            <br/>
+                            3. Audio/video which fall under the multimedia umbrella which gives us chance to listen, watch, and undestand the content being portrayed in real life. 
+                            <br/>
+                            4. HTML is the backbone that holds the website. The files that I use in my pages are in .html extensions. 
+                            <br/>
+                            5. CSS is the cosmetic appliance of a webpage where we beautify it with styling such as margins, padding, color, font sizing etc. 
+                            <br/>
+                            6. Javascript is the cornerstone to making the website function through the use of button clicking functionality, adding, removing content and navigating other ways.
+                            <br/>
+                           (Module 1, 2023)
+                        </p>
+                        <h3>What are Tags, Elements and Attributes?</h3>
+                        <p>I looked deeper into the main components of HTML and those are tags, elements, and attributes. Tags start with a left angle bracket, the tag name, and end off with a right angle bracket.  
+                            At times, tags and elements can confuse me, but I learned to distinguish between the two. The main difference between tags and elements are that tags would 'tag' the keyword that shows the type of content
+                            I will have the pleasure of reviewing. Elements are the whole package, the tag and all the relevant content associated with the tag from beginning to ending. 
+                            Finally, I learned about attributes, where it is thought of as a descriptive trait that links to that tag. For instance, a paragraph tag having a class attribute set to 'info'. 
+                            Oh, and one more misunderstanding that I once had was that if HTML was considered a computer programming language but after recently 
+                            reviewing the lecture notes, I was wrong. Nope, HTML is purely markup language that acts as a guide for any web browser to render content.
+                            (Module 1, 2023)
+                        </p>
+                        <h3>The Importance of Structural Elements</h3>
+                        <p>Since I work with HTML in my professional career, I always am accustomed to structural elements. 
+                           Such structural elements include the div tag where it acts as a container for content, but I generally think of it as a wrapper 
+                           to properly compartmentalize content into sections. For instance, if I had a section where I would store blocks of text in a grid, then it is best to wrap it
+                           around an amazing div structural element. Other important structural elements that I just reviewed again in the notes, but rarely use at my work, 
+                           are the header, section, article, nav, aside, and footer. I never needed to use them to separate content but I see it is very helpful. The header is the starter for introductory content, 
+                           but I do my best not to confuse with head tag. The section is what I think of as a cluster content that we have all content in one place. The article tag is what I rarely see since I never
+                           built blogging websites. But the main purpose is to divide the content to present in an article or blog entry. Nav as I know are for navigation such as sidemenus and top of the page that supplement hyperlinks. 
+                           Finally the aside is for sidebar content and footer is anything important about me such as my contact details, copyright data, etc.
+                           (Module 1, 2023)
+                        </p>
+                    </div>   
+                </section>
+            </main>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+            <footer>
+                <nav>
+                    <!-- The footer will contact my contact me web form page-->
+                    <a href="contact_me.html" id="contactme">Contact Me</a>
+                </nav>
+                <!-- THIS IS FOR COPYRIGHT TEXT-->
+                &copy;2023. Sheikh Mahmud. BU MET CS601 - Web App Development
+                <br/>
+                <br/>
+                <br/>
+            </footer>
+
+    </body>
+</html>

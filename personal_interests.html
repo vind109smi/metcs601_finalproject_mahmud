@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Interests</title>
+        <link rel="stylesheet" href="./css/global_styles.css">
+         <!-- Below is only for specific styles per page, not global -->
+        <style type="text/css">
+            #personalinterestnav {
+                background-color: white;
+                text-align: center;
+                font-weight: bold;
+                color: orange;
+            }
+
+            #funptext {
+                font-weight: bold;
+                color: seagreen;
+                position: relative;
+            }
+
+            #myheading2andvid {
+                text-align: center;
+            }
+
+            #personalvid {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 50%;
+            }
+
+            #chillimg {
+                border: 6px solid indigo;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Applied all structural elements here -->
+        <header>
+            <!-- main links so to not confuse with link above -->
+            <nav>
+                <a href="index.html">Main Page</a> |
+                <a href="personal_bio.html">Personal Bio</a> |
+                <a href="personal_interests.html" class="active">My Personal Interests</a> |
+                <a href="learn_HTML.html">Learn More About HTML5</a> |
+                <a href="learn_CSS.html">Learn More About CSS3</a> |
+                <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
+                <a href="works_cited.html">Works Cited Page</a>
+            </nav>          
+            <h1>My Interests</h1>
+            <figure>
+                <img src="images/my_other_perfect_img.jpeg" width="250" height="300" alt="blank_perfect_img" id="chillimg">
+            </figure>
+            <nav id="personalinterestnav">
+                <p>For fun, I ocassionally play multiplayer and action/anime based games on <a href="https://store.steampowered.com/">Steam</a></p>
+            </nav>
+            <hr/>       
+        </header>
+        <br/>
+        <main>
+            <section>
+                <p id="funptext">Applying some great pictures and video to showcase how HTML5 elements work</p>
+            </section>
+            <hr/>
+            <section>
+                <!-- Applying the video element -->
+                <div>
+                    <!-- Adding a personal video -->
+                    <h2 id="myheading2">What I Do As A Full Stack Developer</h2>
+                    <iframe id="personalvid" width="600" height="550" src="https://www.youtube.com/embed/FKEQW_qF8Bw" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        <br/>
+        <br/>
+        <hr/>
+        <footer>
+            <nav>
+                <!-- The footer will contact my contact me web form page-->
+                <a href="contact_me.html" id="contactme">Contact Me</a>
+            </nav>
+            <!-- THIS IS FOR COPYRIGHT TEXT-->
+            &copy;2023. Sheikh Mahmud. BU MET CS601 - Web App Development
+            <br/>
+            <br/>
+            <br/>      
+        </footer>
+    </body>
+</html>

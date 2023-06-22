@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn More About JS, JSON, and more</title>
+        <link rel="stylesheet" href="./css/global_styles.css">
+
+        <!-- PLEASE CHANGE THE BELOW TO HAVE CSS CONTENT ONLY-->
+        <!-- Below is only for specific styles per page, not global -->
+        <style type="text/css">
+        #mainheading {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 50%;
+            color: darkblue
+        }
+
+        /* Applying border styling to specifically the image's jsjsonimg id*/
+        #jsjsonimg {
+            border: 2px solid seagreen; /* light to dark red*/
+            border-radius: 20%;
+            margin: auto;
+            display: block;
+            position: relative;
+        }
+
+        /* mainjscontent in main section in Learn About JS and JSON page */
+        #mainjscontent {
+            margin-left: 10px;
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* General for div directly to selector section */
+        div > section {
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            padding: 4px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Applied all structural elements here -->
+        <header>
+            <nav>
+                <a href="index.html">Main Page</a> |
+                <a href="personal_bio.html">Personal Bio</a> |
+                <a href="personal_interests.html">My Personal Interests</a> |
+                <a href="learn_HTML.html">Learn More About HTML5</a> |
+                <a href="learn_CSS.html">Learn More About CSS3</a> |
+                <a href="learn_JS_JSON_more.html" class="active">Learn More About JS/JSON/AJAX</a> |
+                <a href="works_cited.html">Works Cited Page</a>
+            </nav>   
+            <h1>Important Things to Known About JS, JSON and more</h1>
+            <div id="mainheading">
+                <figure>
+                    <img src="images/javascript_puns.jpeg" width="380" height="310" alt="blank_picture" id="jsjsonimg">
+                </figure>
+            </div>        
+        </header>
+        <br/>
+        <div>
+            <main>
+                <section id="mainjscontent">
+                    <!-- VERIFY ALL THESE ARE WHAT I INCLUDE (Adding the main heart of the information of JS and JSON)-->
+                    <div>
+                        <!-- INCLUDE JS-->
+                        <h3>What Is There To Know About Javascript?</h3>
+                        <p> I have learned that Javascript is the most widely used web programming lanage that helps me combine web content 
+                            with functionalities, similar to regular OOP. Javascript helps with HTML, CSS and even server side technology such as Node.js.
+                            It all started off with ECMAScript standard back in 1997 when it declared JS to be an official language. Javascript interacts well with
+                            the DOM where we use DOM as API for XML documents. The Browser Object Model or BOM is for methods and interfaces for accessing and manipulating 
+                            web browser outside of context. Just like CSS, we can either write code using internal JS inside HTML by denoting the script tag and adding our JS magic there,
+                            or better yet, when I do large scale complex web coding, I need to apply external JS which is via the link to the external file.
+                            What is neat is that even in my daily profession and in this course, I can debug Javascript using developer tools such as Chrome Debugger.
+                            This allows me to spot any javascript errors, read upon it along with the line it points to the error, and perform other handy 
+                            testing tricks such as console.log() an object, writing JS code in console and so much more. Throughout this module, 
+                            I have learned different things of JS such as statements, expressions, variables, inputs and outputs such as alerts, document.write, etc., data types,
+                            conditionals, functions, and even most importantly to me, scoping.
+                           (Module 3, 2023)
+                        </p>
+                        <!-- INCLUDE JS DOM and Events-->
+                        <h3>Looking at HTML DOM for JS Functionality and Validations</h3>
+                        <p> Throughout this course, I was able to apply Javascript to manipulate DOM. The DOM gave me acess to properties and methods such as grabbing
+                            element by id. A key feature in JS whenever we want to see the reaction of the HTML content. I even learned things such as window which is similar to document scope 
+                            in Javascript. I can do so much more, such as grabbing tag name, node name of specific DOM elements in HTML while applying them in JS functions in my code. Heck, even
+                            innerHTML is the other thing that crosses my mind. We can apply styling to DOMs by grabbing their ids too. I can expand beyond the parent nodes and go deeply into child nodes.
+                            I have been familiar with various DOM events such as mouse events such as onclick, onmouseenter, onmouseleave, addEventListeners(), and other DOM events such as forms. 
+                            Even in my fourth assignment, I got chance to apply what I knew about JS dom through web forms. This is common that most of us developers use and update in our coding careers.
+                            A form (HTML form should I say), has many things: name, action, method e.g. POST, GET, and required attribute, etc. If I created those alone without any JS functionality even validations, 
+                            not much use coming from it. To add some spice, I would write forms and have them processed in client side by applying the event listeners, check validity and other techniques that I have learned.
+                            In the assignment and in the course, I was instructed and encouraged to apply mix of both HTML5 and JS validations. Just using forms and applying patterns and required was not enough for me 
+                            to grasp how important data would be, so I needed some additional constraints to apply.
+                            (Module 4, 2023)
+                        </p>
+                        <!-- INCLUDE JSON -->
+                        <h3>JSON or Jason?</h3>
+                        <p> In case you are wondering, JSON stands for JavaScript Object Notation, but the way we say it sounds like the name 'Jason'. If we say slowly, then yeah, we notice the difference. Meh.
+                            JSON is pure essence of organizing my content in contained format such as arrays. This is pure data interchange. I have applied JSON in my fifth assignment.
+                            I applied collection of name/value pairs that represent objects and we have ordered list of values in array format, such as: 
+                            {
+                                "my_favorite_foods" : 
+                                [ 
+                                        { 
+                                            "fast_food": {"foodName": "Ramen", "type": "noodles", "origin": "Japanese" } ...
+                                        }
+                                ]
+                            }. I even learned FETCH, no I don't mean play fetch with my doggie. Fetch is a clean built in API that helps me quickly fetch and handle data on server. I learned handy tricks with Fetch
+                            such as applying promises (Module 5, 2023).
+                        </p>
+                        <!-- INCLUDE VUE.JS-->
+                        <h3>Vue.Js: The Coating to Great JS Development</h3>
+                        <p> Since this module was short, I applied Vue internal to the HTML. I learned things such as binding attributes such as v-bind, v-on, and other neat attributes such as for class styling, event handling
+                            and conditions. One thing I learned, we need to be careful how we code the Vue component. If we are using Vue2, we need to do the const app = new Vue() instantiation and use el: '#id' and if we 
+                            use Vue3, then we do the const app = Vue.createApp().mount("#id)". In between is how we return the data. The Vue2 can be done via function and object, but Vue3 is strictly for the function. We grab the Vue functionality through 
+                            CDN. There are many sources out there but I am careful to choose the right version and the mininification js one (Module 6, 2023).
+                        </p>
+                    </div>   
+                </section>
+            </main>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+            <footer>
+                <nav>
+                    <!-- The footer will contact my contact me web form page-->
+                    <a href="contact_me.html" id="contactme">Contact Me</a>
+                </nav>
+                <!-- THIS IS FOR COPYRIGHT TEXT-->
+                &copy;2023. Sheikh Mahmud. BU MET CS601 - Web App Development
+                <br/>
+                <br/>
+                <br/>
+            </footer>
+
+    </body>
+</html>
