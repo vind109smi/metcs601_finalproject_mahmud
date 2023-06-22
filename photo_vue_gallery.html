@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML With Vue.Js</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.0/vue.global.min.js"></script>
+     <link rel="stylesheet" href="./css/global_styles.css">
+</head>
+<body> 
+    <div id="app">
+        <header>
+            <h1 id="mainwelcomeheading">My Personal Photo Gallery</h1>   
+            <nav>
+              <a href="index.html">Main Page</a> |
+              <a href="personal_bio.html">Personal Bio</a> |
+              <a href="personal_interests.html">My Personal Interests</a> |
+              <a href="learn_HTML.html">Learn More About HTML5</a> |
+              <a href="learn_CSS.html">Learn More About CSS3</a> |
+              <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
+              <a href="works_cited.html">Works Cited Page</a>
+            </nav>   
+          </header>
+          <!-- This v-bind:style fulfills requirement 3 of adding another Vue.js functionality.-->
+           <!-- <h2 v-bind:style="{fontWeight: fontWeight, color: fontColor, textAlign: textAlign, margin: margin, padding: padding}">My Personal Photo Gallery</h2> -->
+        <br/>
+        <div id="myimgsstyles">
+            <img :src="teenageImgHover" alt="random_little_guy" width ="400" height= "440" @mouseover="hover = true" @mouseleave="hover = false">
+            <img :src="youngAdultImgHover"alt="random_teen_dude" width="350" height="440" @mouseover="hover = true" @mouseleave="hover = false">
+            <img :src="currentAdultImgHover" alt="youngster_prince" width="330" height="440" @mouseover="hover = true" @mouseleave="hover = false">
+            <img :src="kidImgHover" alt="amazing_man" width="400" height="440" @mouseover="hover = true" @mouseleave="hover = false">
+        </div>
+    </div>
+    
+    <!-- APPLY STYYLING -->
+    <!-- This script is for the Vue instance and functionality
+    AS FYI: As I hover over, the image positioning will rotate, it will make more sense when you run my code, Josh :)-->
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return {
+                    littleMeImg: 'images/little_me.jpeg',
+                    teenageMeImg: 'images/teenage_me.jpeg',
+                    youngAdultImg: 'images/young_adult_me.jpeg',
+                    currentAdultImg: 'images/handsome_current_me.jpeg',
+                    hover: false, // setting the hover to false by default.
+                    // style binding applied in h2 tag and returning in the data section.
+                    // fontWeight: 'bold',
+                    // fontColor: 'brown',
+                    // textAlign: 'center',
+                    // margin: 'auto',
+                    // padding: '3px'
+                }
+            },
+            // adding new function to handle the image hover, once we leave out of the image, it goes back to the current image.
+            computed: {
+                teenageImgHover() {
+                    return this.hover ? this.teenageMeImg : this.littleMeImg; // simplifying code using ternary ops.
+                },
+                youngAdultImgHover() {
+                    return this.hover ? this.youngAdultImg : this.teenageMeImg; // simplifying code using ternary ops.
+                },
+                currentAdultImgHover() {
+                    return this.hover ? this.currentAdultImg : this.youngAdultImg; // simplifying code using ternary ops.
+                },
+                kidImgHover() {
+                    return this.hover ? this.littleMeImg : this.currentAdultImg; // simplifying code using ternary ops.
+                }
+            }
+        }).mount('#app'); // this is the alternative to the el: '#app' in Vue2.
+    </script>
+    <footer id="mainfooter">
+        <nav>
+            <a href="contact_me.html" id="contactme">Contact Me</a>
+            <a href="photo_vue_gallery.html" id="photogalid" class="active">My Photo Gallery</a>
+        </nav>
+        &copy; 2023. Sheikh Mahmud. BU MET CS601 - Web App Development    
+    </footer>
+</body>
+</html>

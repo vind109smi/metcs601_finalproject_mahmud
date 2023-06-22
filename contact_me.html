@@ -20,7 +20,6 @@
       margin: 0 auto;
       text-align: center;
     } 
-</style>
   </style>
   <script src="./js/contact_me.js" defer></script>
 </head>
@@ -33,7 +32,7 @@
         <a href="personal_bio.html">Personal Bio</a> |
         <a href="personal_interests.html">My Personal Interests</a> |
         <a href="learn_HTML.html">Learn More About HTML5</a> |
-        <a href="learn_CSS.html" class="active">Learn More About CSS3</a> |
+        <a href="learn_CSS.html">Learn More About CSS3</a> |
         <a href="learn_JS_JSON_more.html">Learn More About JS/JSON/AJAX</a> |
         <a href="works_cited.html">Works Cited Page</a>
       </nav>   
@@ -42,8 +41,7 @@
       <section></section>
       <div>
         <h2 id="submitformheading">Please Reach Out To Me!</h2>
-        <!-- applying the forms but at the moment, action is left blank, I plan to use some other means to send data. TBD-->
-        <form name="myform" id="mainformsdiv" action="" method="POST" onsubmit="return validateContactForm()" novalidate>
+        <form name="myform" id="mainformsdiv" method="POST" onsubmit="return validateContactForm()" novalidate>
           <div id="controlsdiv">
             <div>
               <!-- Full Name -->
@@ -79,7 +77,8 @@
               <input type="checkbox" name="email" value="email" id="emailCheckbox"><label for="emailCheckbox">E-Mail</label>
               <br/>
               <hr/>
-              <!-- Text fields that will display upon selection of the corresponding checkboxes -->
+              <!-- Text fields that will display upon selection of the corresponding checkboxes:
+              NOTE, 6091123456 is the format example we follow for phone number, don't use dashes in between.-->
               <label for="phoneInput">Phone Number:</label><br/>
               <input type="text" name="phoneInput" id="phoneInput" placeholder="Please Enter Phone #." pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number." style="display: none;" class="center-align">
               <label for="emailInput">Email Address:</label><br/>
@@ -97,6 +96,7 @@
     <footer id="mainfooter">
       <nav>
         <a href="contact_me.html" id="contactme" class="active">Contact Me</a>
+        <a href="photo_vue_gallery.html" id="photogalid">My Photo Gallery</a>
       </nav>
       &copy; 2023. Sheikh Mahmud. BU MET CS601 - Web App Development    
     </footer>

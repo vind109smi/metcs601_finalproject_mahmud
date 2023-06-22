@@ -68,8 +68,20 @@ footer {
     color: maroon;
 }
 
+#photogalid {
+    margin: 50px;
+    color: indigo;
+}
+
 #professionalresume {
     margin: auto;
+}
+
+#mypersonalinfodetails {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px dotted darkred;
 }
 
 /* Media queries */
